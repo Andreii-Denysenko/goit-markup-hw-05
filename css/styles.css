@@ -530,6 +530,57 @@ ul {
   margin-bottom: 9px;
 }
 
+/* -----------------------------------------------------Модалка ------------------*/
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+}
+
+.modal{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50% ,-50%);
+
+min-height: 581px;
+width: 528px;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+
+}
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50%;
+
+position: absolute;
+top: 8px;
+right: 8px;
+
+cursor: pointer;
+}
+
+.icon-close{
+  height: 11px;
+  width: 11px;
+}
+
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+
 /*----------------------------------------------------Портфолио */
 .visually-hidden {
   position: absolute;
