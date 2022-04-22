@@ -35,6 +35,7 @@ h6 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 ul {
   padding-left: 0px;
   margin-top: 0px;
@@ -292,8 +293,40 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .aboutus-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.aboutus-box-img{
+  position: relative;
+}
+
+
+.aboutus-container-text{
+  background-color: rgba(47, 48, 58, 0.8);
+  width:370px ;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute; 
+  bottom: 0;
+  margin: 0px;
+}
+.aboutus-box-img img {
+  display: block;
+}
+
+.aboutus-text{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--main-light-color-text)
 }
 
 
@@ -424,7 +457,7 @@ ul {
   border: 1px solid var(--accent-color);
 }
 
-/*--------------------------------------------Заголовки */
+/*---------------------------------Заголовки */
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -438,7 +471,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-/*----------------------------------------------Логотип */
+/*---------------------------------Логотип */
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -463,7 +496,7 @@ ul {
   height: 31px;
   width: 145px;
 }
-/* ---------------------------------------------------Подвал */
+/* ---------------------------------Подвал */
 
 .footer {
   background-color: var(--secondary-background-color);
@@ -519,7 +552,7 @@ ul {
 
 }
 
-/*----------------------------------------------------Адресс */
+/*------------------------------------Адресс */
 .city-address {
   font-size: 14px;
   font-style: normal;
@@ -530,7 +563,7 @@ ul {
   margin-bottom: 9px;
 }
 
-/* -----------------------------------------------------Модалка ------------------*/
+/* --------------------------------Модалка ------------------*/
 .backdrop {
   width: 100%;
   height: 100%;
@@ -581,7 +614,7 @@ cursor: pointer;
 }
 
 
-/*----------------------------------------------------Портфолио */
+/*--------------------------------Портфолио */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -658,6 +691,40 @@ cursor: pointer;
   border-width: 0 1px 1px 1px;
   padding: 20px 24px;
 }
+
+
+.portfolio-box-img{
+  position: relative;
+  overflow: hidden;
+}
+
+
+.portfolio-leaving-text{
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--main-light-color-text);
+  background: rgba(33, 150, 243, 0.9);
+padding-top: 63px;
+padding-left: 24px;
+padding-bottom: 63px;
+padding-right: 24px;
+
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+transform: translateY(100%);
+transition: transform 250ms;
+transition-duration: 250ms;
+}
+
+.portfolio-item:hover .portfolio-leaving-text{
+  transform:translateY(0)
+}
+
+
+
 
 /*-----------------------------------------------------Наши продукти*/
 
