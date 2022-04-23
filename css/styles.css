@@ -84,6 +84,8 @@ ul {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-bot {
@@ -95,6 +97,8 @@ ul {
 
   margin-top: 9px;
   display: block;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-contacts-top {
@@ -136,6 +140,9 @@ ul {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -225,22 +232,25 @@ ul {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
   color: var(--accent-color);
 }
+
 .link-header.current::after{
   display: block;
   content: "";
   width: 100%;
   height: 4px;
   background: var(--accent-color);
-border-radius: 2px;
-
+  border-radius: 2px;
 
   position: absolute;
-  bottom: -32px;
+  bottom: -33px;
 }
 
 
@@ -250,7 +260,7 @@ border-radius: 2px;
   background-color: var(--color-hero-bt-hover);
 }
 
-/*----------------------------------------------- Преимущества */
+/*-------------------------------------------- Преимущества */
 
 .benefits {
   font-size: 14px;
@@ -291,7 +301,7 @@ border-radius: 2px;
   align-items: center;
 }
 
-/*---------------------------------------------- Чем мы занимаемся */
+/*------------------------------------------ Чем мы занимаемся */
 .aboutus {
   margin-left: auto;
   margin-right: auto;
@@ -424,7 +434,6 @@ color:var(--main-light-color-text)
   margin-right: 10px;
 }
 
-
 .item-icon .link-network {
   display: flex;
   width: 44px;
@@ -433,12 +442,18 @@ color:var(--main-light-color-text)
   justify-content: center;
   text-align: center;
 }
+
+.link-network{
+  border-radius: 50%;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .link-network:hover,
 .link-network:focus {
   background-color: var(--accent-color);
   fill: var(--main-light-color-text);
-  border-radius: 50%;
 }
+  
 
 
 /*------------------------Наши клиенты-------------------- */
@@ -467,6 +482,8 @@ color:var(--main-light-color-text)
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .item-clients:not(:last-child) {
   margin-right: 30px;
@@ -569,7 +586,8 @@ color:var(--main-light-color-text)
   display: flex;
   align-items: center;
   justify-content: center;
-
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------------------------Адресс */
@@ -590,13 +608,21 @@ color:var(--main-light-color-text)
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
+  transition: opacity 250ms, visibility 250ms ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal {
+  transform: skew(0) scale(2);
 }
 
 .modal{
 position: absolute;
 left: 50%;
 top: 50%;
-transform: translate(-50% ,-50%);
+
+transform: translate(-50% ,-50%) skew(360deg) scale(1);
+transition: transform 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 min-height: 581px;
 width: 528px;
@@ -620,6 +646,7 @@ top: 8px;
 right: 8px;
 
 cursor: pointer;
+
 }
 
 .icon-close{
@@ -669,6 +696,8 @@ cursor: pointer;
 
   border-radius: 4px;
   padding: 6px 22px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button-list {
   display: flex;
@@ -736,11 +765,11 @@ top: 0;
 left: 0;
 transform: translateY(100%);
 transition: transform 250ms;
-transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-leaving-text{
-  transform:translateY(0)
+  transform:translateY(0);
 }
 
 
