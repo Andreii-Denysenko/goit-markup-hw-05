@@ -487,14 +487,59 @@
                 </a>
               </li>
             </ul>
-          
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close><svg class="icon-close" width="18px" height="18px"><use href="./images/icons.svg#icon-close-black"></use></svg></button>
+    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+      <form class="modal-form">
+        <label class="input-text" for="user-name">Имя</label>
+        <input
+        name="user-name"
+        placeholder=""
+        type="text"
+        class="modal-input"
+        id="user-name"
+        />
+        <label class="input-text" for="user-tel">Телефон</label>
+        <input
+        name="user-tel"
+        placeholder=""
+        type="tel"
+        class="modal-input"
+        id="user-tel"
+        />
+        <label class="input-text" for="user-email">Почта</label>
+        <input
+        name="user-email"
+        placeholder=""
+        type="email"
+        class="modal-input"
+        id="user-email"
+        />
+        <label class="input-text" for="modal-coment">Комментарий</label>
+        <textarea 
+        class="modal-coment" 
+        name="modal-coment"
+        placeholder="Введите текст"
+        type="text"
+        id="modal-coment"
+        ></textarea>
+        <div class="box-agreement">
+        <input
+        name=""
+        placeholder=""
+        type="checkbox"
+        class=""
+        id=""
+        />
+        <p class="text-treaty">Соглашаюсь с рассылкой и принимаю <a href="" class="link-treaty">Условия договора</a></p>
       </div>
+        <button type="submit" class="button treaty-bt">Отправить</button>
+      </form>
+  </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
