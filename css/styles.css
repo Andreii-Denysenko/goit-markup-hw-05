@@ -726,20 +726,8 @@ border-radius: 4px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.link-treaty{
-  text-decoration-color: var(--accent-color);
-  color: var(--accent-color);
-}
-.box-agreement{
-  display: flex;
-  align-items: center;
-}
-.text-treaty{
 
-font-size: 14px;
-line-height: 1.71;
-color: #757575;
-}
+
 .treaty-bt{
   font-weight: 700;
   font-size: 16px;
